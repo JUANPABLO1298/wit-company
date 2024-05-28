@@ -26,6 +26,8 @@ class Productos(Base):
       self.cantidad_stock = cantidad_stock
       self.valor_unitario = valor_unitario
       self.categoria = categoria
+
+
     
     def agregar_producto(producto):
       session = Session()
@@ -65,3 +67,14 @@ class Clientes(Base):
     direccion = Column(String(300), unique=False, nullable=False)
     telefono = Column(String(20), unique=False, nullable=False)
     
+class Pizzas(Base):
+    __tablename__ = "PIZZITAS"
+    id = Column(Integer, primary_key=True)
+    pizza = Column(String(300), unique=True, nullable=False)
+    ingrediente= Column(String(300), unique=False, nullable=False)
+    
+    
+    def __init__(self,pizza,ingrediente):
+      self.pizza = pizza
+      self.ingrediente = ingrediente
+     
