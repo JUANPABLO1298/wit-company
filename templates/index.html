@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block page_content %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Nuestro Negocio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a wit company</h1>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>Sobre Nosotros</h2>
+            <p>En nuestra pizzería, nos apasiona crear experiencias gastronómicas memorables para nuestros clientes. Con una larga tradición en la preparación de auténticas pizzas artesanales, cada bocado es una explosión de sabor que te transporta a las calles de Nápoles.
+
+                Nuestro menú ofrece una amplia variedad de pizzas, desde las clásicas Margarita y Pepperoni hasta nuestras creaciones especiales cargadas de ingredientes frescos y sabrosos. Cada pizza se elabora con masa fresca, salsa de tomate casera y los mejores quesos y acompañamientos, asegurando una calidad excepcional en cada pedazo..</p>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>venta de pizzas</li>
+                <li>pizzas a domicilio</li>
+                
+            </ul>
+            <h2>Horario de Atención</h2>
+            <p>Estamos abiertos de lunes a viernes de 3:00 pm a 10:00 PM, y los sábados de 3:00 pM a 11:00 PM.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nuestro Negocio</p>
+    </footer>
+</body>
+</html>
+
+{% endblock %}
